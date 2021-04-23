@@ -1,0 +1,218 @@
+.bs-example{
+    margin: 20px;
+  }
+.navbar{
+      margin-bottom: 1000px;
+
+  }
+
+#header {
+  height: 50px;
+  /* background-color: #ccc; */
+}
+#body {
+  height: auto;
+  background-color:#535a60;
+  margin-top:2px;
+  width:820px;
+}
+#footer {
+  height: 200px;
+  /* background-color: #3f3f3f; */
+}
+
+.white-text{
+  color:green;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+
+body {
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+/* Toggle Styles */
+
+#viewport {
+  padding-left: 250px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#content {
+  width: 100%;
+  position: relative;
+  margin-right: 0;
+}
+
+/* Sidebar Styles */
+
+.contain{
+  overflow: hidden;
+  width: 800%;
+  white-space: nowrap;
+margin-bottom: 20px;
+}
+/* .contain > div {
+  width: 70px;
+  height: 100px;
+  float: left;
+  margin: 0px 0.px 0px 0px;
+  background-color: white;
+  margin-top: -20px;
+  word-wrap: break-word;
+  /* overflow-x: scroll; 
+
+} */
+.contain .div{
+  width:650px;
+  background-color: white;
+/* margin:1000px; */
+  height: auto;
+  float: left;
+  margin: 0 0px 0px 0px;
+  word-wrap: break-word;
+  /* overflow-x: scroll; */
+  white-space: pre-wrap;
+
+  /* overflow-y: scroll; */
+}
+
+.jumplinks-menu-wrapper {
+    /* position: fixed; */
+      right: 0;
+    z-index: 99;
+  }
+  #jLinkSliderContainer .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+  }
+  .jlinks-menu {
+      width: 200px;
+  }
+  .jlinks-menu a {
+      color: #444;
+      text-decoration: none;
+  }
+  .jlinks-menu-hidden {
+      right: -200px;
+  }
+  .toggle-position {
+      right: 30px;
+  }
+ 
+  .jumplinks-container {
+      background-color:#37474F ;
+      font-size: .75em;
+      /* border: 1px solid hsl(206, 17%, 92%); */
+      text-align: left;
+      color: #333;
+      margin-top:350px;
+  }
+  .jumplinks-container ul li a {
+    border-bottom: 0;
+  }
+  .jumplinks-container ul {
+      margin: 0;
+      padding: 0;
+  }
+  .jumplinks-container ul li {
+      list-style: none;
+      width: 100%;
+      height: 60px;
+      border-bottom: 1px solid black;
+      margin: 0;
+      padding: 0;
+      padding-top:50px;
+      padding-left:20px;
+      font-size:12px;
+    
+  }
+  .jumplinks-container ul li:last-of-type {
+      border-bottom: 0;
+  }
+  .jumplinks-container img {
+      height: 30px;
+      width: auto;
+  }
+  /* .jumplinks-container ul li:hover {
+      background-color: white;
+      background-color: rgba(255, 255, 255, 1);
+      cursor: pointer;
+  } */
+  .jumplinks-container ul li span {
+      position: relative;
+    top: -22px;
+  }
+  .jumplinks-container ul li a:visited {
+    color: #777;
+  }
+  .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.halfStyle {
+  position:relative;
+  display:inline-block;
+  width:1;
+  font-size:80px;
+  color: black;
+  overflow:hidden;
+  white-space: pre;
+}
+.halfStyle:before {
+  display:block;
+  z-index:1;
+  position:absolute;
+  top:0;
+  width: 50%;
+  content: attr(data-content); /* dynamic content for the pseudo element */
+  overflow:hidden;
+  pointer-events: none; /* so the base char is selectable by mouse */
+  color: #f00; /* for demo purposes */
+}

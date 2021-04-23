@@ -1,0 +1,196 @@
+
+.section{
+    display: flex;
+    padding:10px;
+    justify-content: center;
+    height:auto
+}
+.sidebar{
+    height:400px;
+    width:20%;
+    margin:10px;
+    padding:30px 0px;
+    text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.364);
+  border-radius: 10px;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1); 
+  transform: scale(1);  
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1); 
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1);
+  transition: all 200ms ease-in;
+}
+.main-content{
+    height:auto;
+    width:75%;
+    margin:10px;
+    padding:50px 20px;
+  background-color: rgba(255, 255, 255, 0.364);
+  border-radius: 10px;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1); 
+  transform: scale(1);  
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1); 
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1);
+  transition: all 200ms ease-in;
+  padding-bottom:0px;
+}
+.sidebar_link li {
+    width:100%;
+    text-decoration: none;
+    list-style: none;
+    padding:20px 0px;
+    align-items: flex-start;
+}
+.sidebar_link :hover {
+   background-color:#489780;
+}
+.sidebar_link li a{
+    font-size:18px;
+    padding:0px 10px;
+     color: black;
+     text-decoration: none;
+     cursor: pointer;
+}
+.sidebar_link li i{
+    font-size:16px;}
+   
+@media screen and (max-width:700px){
+    .section{
+        display:block;
+    }
+    .sidebar{
+        height: auto;
+        width:90%;
+    }
+    .sidebar_link li{
+        display: inline-block;
+        padding:0px 20px;
+    }
+    .main-content{
+        width:90%;
+    }
+}
+
+.blog{
+    width:100%;
+    margin:10px;
+    padding:50px 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.364);
+  border-radius: 10px;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1); 
+  transform: scale(1);  
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1); 
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1);
+  transition: all 200ms ease-in;
+  padding-bottom:0px;
+}
+.main-content h1{
+    margin:0px 10x;
+    overflow-wrap: break-word;
+
+}
+.btn{
+background-color:#489780;
+color: white;
+border-radius: 20px;
+margin:10px 5px;
+}
+li{
+    list-style: none;
+}
+.blog p{
+    font-weight: 500;
+    overflow-wrap: break-word;
+}
+
+/* .comment {
+    display:flex;
+} */
+textarea{
+    width:100%
+}
+.text{
+    width:90%;
+    flex-wrap: wrap;
+    overflow-wrap: break-word;
+}
+@media screen and (max-width:600px){
+    .main-content h1{
+        text-align: center;
+    }.main-content {
+        text-align: center;
+    }
+}
+
+.liker{
+display: none;
+}
+.disliker{
+    display:none;
+}
+#button:hover + a.liker{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.364);
+    border-radius: 10px;
+    -webkit-transition: all 200ms ease-in;
+     -webkit-transform: scale(1); 
+  transform: scale(1);  
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1); 
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1);
+  transition: all 200ms ease-in;
+  padding-bottom:0px;
+    }
+#disbutton:hover + a.disliker{
+    display: contents;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.364);
+    border-radius: 10px;
+    -webkit-transition: all 200ms ease-in;
+     -webkit-transform: scale(1); 
+  transform: scale(1);  
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1); 
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1);
+  transition: all 200ms ease-in;
+  padding-bottom:0px;
+    }
+#disbutton,#delete{
+background-color:#d85132 ;
+    }
+input{
+    font-family: Poppins-Medium, sans-serif;
+    width: 100%;
+    display: block;
+    line-height: 54px;
+    padding: 0 10px;
+    font-size: 16px;
+    border: 2px solid #489780;
+    color: #333;
+    border-radius: 18px;
+    -webkit-transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+textarea{
+    font-family: Poppins-Medium, sans-serif;
+    width: 100%;
+    display: block;
+    padding: 0 10px;
+    font-size: 16px;
+    border: 2px solid #489780;
+    color: #333;
+border-radius: 18px;
+    transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}

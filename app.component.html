@@ -1,0 +1,96 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <title>Bootstrap Example</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+    
+<header>
+  <img src="assets\images\Group 1.png" alt="" class="logo">
+  <ul class="nav_link">
+      
+      <li><a (click)="home()"  routerLinkActive="active">Home</a></li>
+      <li><a routerLink='write' routerLinkActive="active">Post</a></li>
+      <li><a routerLink='order' routerLinkActive="active">Profile</a></li>
+  </ul>
+  <!-- <input type="text" name="" placeholder="Search in products" class="search"> -->
+  <ul class="nav_rightlink">
+      <li><a routerLink="login" *ngIf='!y' routerLinkActive="active">Login/Signup</a></li>
+      <li><a *ngIf='y'>Logout</a></li>
+  </ul>
+</header>
+
+<router-outlet></router-outlet>
+<!-- 
+<footer class="sec6">
+  <img src="assets\images\picture30.JPG" alt="" class="picture30">
+  <div class="text4">
+      <img src="assets\images\picture31.JPG" alt="" class="picture31">
+      <div class="it">
+          <p>Mobster, 16 A kundan Nagar jaipur Rajasthan &nbsp; </p>
+      </div>
+
+      <div class="text5">
+          <img src="assets\images\picture35.JPG" alt="" class="picture35">
+          <div class="it">
+              <p>8619074467</p>
+          </div>
+      </div>
+ <div class="text6">
+  <img src="assets\images\picture36.JPG" alt="" class="picture36">
+  <div class="it">
+ <p> nikhil.saroj.bansal@gmail.com</p>
+  </div>
+ </div>
+</div>
+<br>
+<hr>
+
+<br><br>
+<div class="lists">
+
+<div class="l1">
+  <span>Products</span>
+  <ul class="links">
+      <li><a >Laptop</a></li>
+      <li><a >Mobiles</a></li>
+      <li><a >Television</a></li>
+
+  </ul>
+</div>  
+<div class="l1">
+  <span>Products</span>
+  <ul class="links">
+      <li><a >Accessories</a></li>
+      <li><a >Drones</a></li>
+      <li><a >Camera</a></li>
+
+  </ul>
+</div>
+<div class="l1">
+  <span>More</span>
+  <ul class="links">
+      <li><a >want to work?</a></li>
+      <li><a >Any questions</a></li>
+      <li><a >About</a></li>
+  </ul>
+</div>  
+<div class="l1">
+  <span>Connect Us</span>
+  <ul class="links">
+      <li><a >Facebook</a></li>
+      <li><a >Instagram</a></li>
+      <li><a >Twitter</a></li>
+      <li><a >Youtube</a></li>
+  </ul>
+</div>  
+
+
+</div>
+</footer> -->

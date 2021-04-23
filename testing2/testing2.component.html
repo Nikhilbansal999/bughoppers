@@ -1,0 +1,45 @@
+
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+
+
+  
+  <ng-template #loaded>
+      <div class="container-fluid"  style="margin:-10px 00px 100px 50px">
+          <div class="row">
+            <div class="col-md-4" style="padding:10px 20px;font-size:16px;" *ngFor="let Data of finalData">
+              <img style="height:250px;width:250px" src="{{Data.image}}">
+               <br> <h3>{{Data.item}}</h3>
+              {{Data.price}}<br>
+              <button class="btn btn-primary" >-</button><span>{{Data.counter}}</span><button  class="btn btn-primary">+</button>
+            </div>
+          </div>
+        </div>
+  </ng-template>
+        </body>
+       
+
+
+        <div *ngIf="loading else loaded" style="margin:200px 10px 10px 50px">
+            <div class="bubblingG">
+                <span id="bubblingG_1">
+                </span>
+                <span id="bubblingG_2">
+                </span>
+                <span id="bubblingG_3">
+                </span>
+              </div>
+        </div>
+  

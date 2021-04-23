@@ -1,0 +1,108 @@
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<div id="header" class="col-lg-12" style="margin-top:-20px; ">
+<div height="251px">
+<nav class="navbar navbar-inverse" >
+<div class="container-fluid" >
+  <div class="navbar-header">
+    <a class="navbar-brand" href="#"> 
+    </a>
+  </div>
+  <ul class="nav navbar-nav">
+    <li><a (click)="Home()">Home</a></li>
+    <li><a (click)="blogPost()">Blogs</a></li>
+    <li><a (click)="chats()">Chats</a></li>
+    <li><a (click)="users()">Users</a></li>
+    <li><a (click)="ask()">Ask Questions</a></li>
+    <li><a (click)="unansq()">Unansered Questions</a></li>
+    <li><a  data-text='onSignup'  (click)="faq()">FAQs</a></li>
+    <li>
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" style='margin-top:6px; width:300px;'>
+        
+    </li>
+ 
+    
+  </ul>
+  
+  <ul class="nav navbar-nav navbar-right">
+
+    <li><a  data-text='onSignup'  *ngIf='!y'(click)="onSignup()"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+    <li><a   data-text='Login' *ngIf='!y' (click)="onSubmit()"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    <li><a data-text='Logout' *ngIf='y' (click)="delete()" ><span *ngIf='y' class="glyphicon glyphicon-logout-in"></span> Logout</a></li>
+    <li><a (click)='user()'><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+
+  </ul>
+</div>
+</nav>
+</div>
+</div>
+
+
+
+<div class="main">
+	<h1>Responsive Card Grid Layout</h1>
+	<ul class="cards" >
+	  <li class="cards_item" *ngFor="let Data of finalData">
+		<div class="card">
+		  <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></div>
+		  <div class="card_content">
+			<h1 class="card_title" >{{Data.name}}</h1>
+			<h1 class="card_text">{{Data.skills}}</h1>
+			<button class="btn card_btn">chat</button>
+		  </div>
+		</div>
+	  </li>
+	</ul>
+  </div>
+  
+
+
+
+  
+  <div class="footer">
+	<footer class="site-footer">
+	  <div class="container">
+		<div class="row">
+		  <div class="col-sm-12 col-md-6">
+			<img src='../../assets/images/logo2.png' height="90px" width="195px">
+	
+			<p class="text-justify">BugHoppers.com <i>PROBLEMS NEEDS TO BE SOLVED </i> is an initiative  to help the programmers/developers with the code. we focuses on providing the most best possible solution to coding problems given by other developers as problem to be solved. We will help programmers to find the solution easily and build up the logical concepts in different programming languages that include C, C++, Java,javascript, HTML, CSS, Bootstrap, PHP, python, Android, SQL and Algorithm.</p>
+		  </div>
+	
+	
+		  <div class="col-xs-6 col-md-3">
+			<h6>Quick Links</h6>
+			<ul class="footer-links">
+			  <li><a >About Us</a></li>
+			  <li><a >Contact Us</a></li>
+			  <li><a >Privacy Policy</a></li>
+			</ul>
+		  </div>
+		</div>
+		<hr>
+	  </div>
+	  <div class="container">
+		<div class="row">
+		  <div class="col-md-8 col-sm-6 col-xs-12">
+			<p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+		 <a href="#">BugHoppers</a>.
+			</p>
+		  </div>
+	
+		  <div class="col-md-4 col-sm-6 col-xs-12">
+			<ul class="social-icons">
+			  <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+			  <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+			  <li><a class="dribbble" target="blank" href="https://www.instagram.com/bughoppers/?hl=en"><i class="fa fa-instagram"></i></a></li>
+			  <li><a class="linkedin"  href="#"><i class="fa fa-linkedin"></i></a></li>   
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	</footer>
+	</div>

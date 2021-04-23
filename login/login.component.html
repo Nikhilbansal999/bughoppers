@@ -1,0 +1,21 @@
+<body>
+  <div id="log-in">
+  <form class="login-form"  [formGroup]='form' (ngSubmit)="OnSubmit(email,password)">
+    <h1 class="login-heading">Login</h1>
+    <p class="login-copy">Welcome back, We hope you are doing well. </p>
+    <span>E-mail </span>
+    <div class="field-container -username">
+        <input type="email" formControlName="email" placeholder="Type Your E-mail" name="demo" />
+    </div>
+    <br>
+    <span>Password </span>
+    <div class="field-container -password">
+      <input placeholder="Type Your password" formControlName="password" type="password" name="demo"/>
+    </div>
+    <br>
+    <button class="log-in-button" type="submit">Log in</button>
+    <br>  <br>
+    <a class="create-account-link" (click)="signuprouting()" ><span >Don't have an account?</span> <br> Sign up</a>
+  </form>
+</div>
+</body>

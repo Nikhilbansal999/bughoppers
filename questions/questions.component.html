@@ -1,0 +1,195 @@
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<div id="header" class="col-lg-12">
+<div height="251px">
+<nav class="navbar navbar-inverse" >
+<div class="container-fluid" >
+  <div class="navbar-header">
+    <a class="navbar-brand" href="#"> <img src='../../assets/images/logo2.png' style="margin-top:-25px ; margin-left: -20px;" height="60px" width="195px">
+    </a>
+  </div>
+  <ul class="nav navbar-nav">
+   
+    <li><a (click)="blogPost()">Blogs</a></li>
+    <li><a (click)="users()">Users</a></li>
+    <li><input type="text" class="form-control" style="width:350px;margin-left:20px;margin-top:8px;" placeholder="Ask" name="search"></li>
+    
+    <li>          <button class="btn btn-default" style="margin-top:8px;"type="submit">Submit</button>
+    </li>
+  </ul>
+  
+  <ul class="nav navbar-nav navbar-right">
+    <!-- <li><a  data-text='onSignup'  (click)="faq()">FAQs</a></li> -->
+
+    <li><a  data-text='onSignup'  *ngIf='!y'(click)="onSignup()"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+    <li><a   data-text='Login' *ngIf='!y' (click)="onSubmit()"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    <li><a data-text='Logout' *ngIf='y' (click)="delete()" ><span *ngIf='y' class="glyphicon glyphicon-logout-in"></span> Logout</a></li>
+    <li><a (click)='user()'><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+
+  </ul>
+</div>
+</nav>
+</div>
+</div>
+<div id="sideLeft" class="col-lg-2"><div id="viewport">
+<!-- Sidebar -->
+<div id="sidebar">
+
+  <ul class="nav">
+    <li>
+      <a href="#">
+        <i class="zmdi zmdi-view-dashboard"></i> Home
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class="zmdi zmdi-link"></i> Chats
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class="zmdi zmdi-widgets"></i>Coding Questions
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class="zmdi zmdi-calendar"></i>  Unanswered Questions
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class="zmdi zmdi-info-outline"></i> FAQs
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class="zmdi zmdi-comment-more"></i> Contact
+      </a>
+    </li>
+  </ul>
+</div>
+
+</div>
+</div>
+<div id="body" class="col-lg-8">
+<h1 style="margin-left:50px;">Recent Questions</h1>
+<br>
+<br>
+<div class="contain">
+    <div class="div"></div>
+    <div></div>
+    <div class="like"></div>
+    <div></div>
+    <br>
+  
+  </div><div class="contain">
+    <div class="div"></div>
+    <div></div>
+    <div class="like"></div>
+    <div></div>
+  <br>
+  </div><div class="contain">
+    <div class="div"></div>
+    <div></div>
+    <div class="like"></div>
+    <div></div>
+    <br>
+  
+  </div><div class="contain">
+    <div class="div"></div>
+    <div></div>
+    <div class="like"></div>
+    <div></div>
+    <br>
+  
+  </div><div class="contain">
+    <div class="div"></div>
+    <div></div>
+    <div class="like"></div>
+    <div></div>
+    <br>
+  
+  </div><div class="contain">
+    <div class="div"></div>
+    <div></div>
+    <div class="like"></div>
+    <div></div>
+    <br>
+  
+  </div><div class="contain">
+    <div class="div"></div>
+    <div></div>
+    <div class="like"></div>
+    <div></div>
+    <br>
+  
+  </div><div class="contain">
+    <div class="div"></div>
+    <div></div>
+    <div class="like"></div>
+    <div></div>
+    <br>
+  
+  </div>
+
+</div>
+
+<div id="sideRight" class="col-lg-2">Side Right</div>
+<!-- <div id="footer" class="col-lg-12">  -->
+<div class="footer">
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <img src='../../assets/images/logo2.png' height="90px" width="195px">
+
+        <p class="text-justify">BugHoppers.com <i>PROBLEMS NEEDS TO BE SOLVED </i> is an initiative  to help the programmers/developers with the code. we focuses on providing the most best possible solution to coding problems given by other developers as problem to be solved. We will help programmers to find the solution easily and build up the logical concepts in different programming languages that include C, C++, Java,javascript, HTML, CSS, Bootstrap, PHP, python, Android, SQL and Algorithm.</p>
+      </div>
+
+      <div class="col-xs-6 col-md-3">
+        <h6>Categories</h6>
+        <ul class="footer-links">
+          <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
+          <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
+          <li><a href="http://scanfcode.com/category/back-end-development/">JavaScript</a></li>
+          <li><a href="http://scanfcode.com/category/java-programming-language/">Python</a></li>
+          <li><a href="http://scanfcode.com/category/templates/">Mean Stack</a></li>
+        </ul>
+      </div>
+
+      <div class="col-xs-6 col-md-3">
+        <h6>Quick Links</h6>
+        <ul class="footer-links">
+          <li><a (click)="about()">About Us</a></li>
+          <li><a (click)="contact()">Contact Us</a></li>
+          <li><a (click)="tcp()">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+     <a href="#">BugHoppers</a>.
+        </p>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <ul class="social-icons">
+          <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a class="dribbble" target="blank" href="https://www.instagram.com/bughoppers/?hl=en"><i class="fa fa-instagram"></i></a></li>
+          <li><a class="linkedin"  href="#"><i class="fa fa-linkedin"></i></a></li>   
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>

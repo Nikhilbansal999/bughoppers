@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+<body>
+    <form [formGroup]='form' (ngSubmit)="onSubmit(title,technology,question)">
+<div class="title" >        <!--  <i class="fas fa-pencil-alt"></i>  -->
+         <h2>Ask a Public Question</h2>
+       </div>
+       <br>
+       <div class="info">
+           <fieldset>
+               <input placeholder="Title" formControlName="title" type="text" tabindex="1" style="width: 750px;" autofocus>
+             </fieldset>
+             
+             <fieldset>
+               <input placeholder="Technology" formControlName="technology" type="url" style="width: 750px;" tabindex="4" >
+             </fieldset>
+             <fieldset>
+               <textarea placeholder="Type/paste your question/code here...."  formControlName="question" tabindex="5"  style="height: 250px; width: 750px;"></textarea>
+             </fieldset>
+       </div>
+    
+       <button type="submit" style="width:200px;">Submit</button>
+     </form>
+   </body>

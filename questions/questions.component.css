@@ -1,0 +1,292 @@
+.bs-example{
+    margin: 20px;
+  }
+.navbar{
+      margin-bottom: 1000px;
+
+  }
+  .site-footer
+{
+background-color:#26272b;
+padding:45px 0 20px;
+font-size:15px;
+line-height:24px;
+color:#737373;
+margin-bottom: -120px;
+}
+.site-footer hr
+{
+border-top-color:#bbb;
+opacity:0.5
+}
+.site-footer hr.small
+{
+margin:20px 0
+}
+.site-footer h6
+{
+color:#fff;
+font-size:16px;
+text-transform:uppercase;
+margin-top:5px;
+letter-spacing:2px
+}
+.site-footer a
+{
+color:#737373;
+}
+.site-footer a:hover
+{
+color:#3366cc;
+text-decoration:none;
+}
+.footer-links
+{
+padding-left:0;
+list-style:none
+}
+.footer-links li
+{
+display:block
+}
+.footer-links a
+{
+color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+color:#3366cc;
+text-decoration:none;
+}
+.footer-links.inline li
+{
+display:inline-block
+}
+.site-footer .social-icons
+{
+text-align:right
+}
+.site-footer .social-icons a
+{
+width:40px;
+height:40px;
+line-height:40px;
+margin-left:6px;
+margin-right:0;
+border-radius:100%;
+background-color:#33353d
+}
+.copyright-text
+{
+margin:0
+}
+@media (max-width:991px)
+{
+
+}
+@media (max-width:767px)
+{
+.site-footer
+{
+  padding-bottom:0;
+  margin-bottom:-50px;
+}
+.site-footer .copyright-text,.site-footer .social-icons
+{
+  text-align:center
+}
+}
+.social-icons
+{
+padding-left:0;
+margin-bottom:0;
+list-style:none
+}
+.social-icons li
+{
+display:inline-block;
+margin-bottom:4px
+}
+.social-icons li.title
+{
+margin-right:15px;
+text-transform:uppercase;
+color:#96a2b2;
+font-weight:700;
+font-size:13px
+}
+.social-icons a{
+background-color:#eceeef;
+color:#818a91;
+font-size:16px;
+display:inline-block;
+line-height:44px;
+width:44px;
+height:44px;
+text-align:center;
+margin-right:8px;
+border-radius:100%;
+-webkit-transition:all .2s linear;
+-o-transition:all .2s linear;
+transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+color:#fff;
+background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+line-height:34px;
+height:34px;
+width:34px;
+font-size:14px
+}
+.social-icons a.facebook:hover
+{
+background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+.social-icons li.title
+{
+  display:block;
+  margin-right:0;
+  font-weight:600
+}
+}
+#header {
+  height: 50px;
+  /* background-color: #ccc; */
+}
+#body {
+  height: auto;
+  background-color:darkgrey;
+  margin-top:2px;
+  width:820px;
+}
+#footer {
+  height: 200px;
+  /* background-color: #3f3f3f; */
+}
+
+.white-text{
+  color:green;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+
+body {
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+/* Toggle Styles */
+
+#viewport {
+  padding-left: 250px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#content {
+  width: 100%;
+  position: relative;
+  margin-right: 0;
+}
+
+/* Sidebar Styles */
+
+#sidebar {
+  z-index: 1000;
+  /* position: fixed; */
+  left: 250px;
+  width: 250px;
+  height: 100%;
+  margin-left: -250px;
+  padding-left:10px;
+  overflow-y: auto;
+  background: #37474F;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  margin-top: 310px;
+  /* margin-top: 50px; */
+
+}
+
+#sidebar header {
+  background-color: #263238;
+  font-size: 20px;
+  line-height: 52px;
+  text-align: center;
+}
+
+#sidebar header a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+}
+
+#sidebar header a:hover {
+  color: #fff;
+}
+
+
+
+#sidebar .nav a{
+  background: none;
+  border-bottom: 1px solid #455A64;
+  color: #CFD8DC;
+  font-size: 14px;
+  padding: 16px 24px;
+}
+
+#sidebar .nav a:hover{
+  background: none;
+  color: #ECEFF1;
+}
+
+#sidebar .nav a i{
+  margin-right: 16px;
+}
+
+.contain{
+  overflow: hidden;
+  width: 800%;
+  white-space: nowrap;
+}
+.contain > div {
+  width: 70px;
+  height: 90px;
+  float: left;
+  margin: 0px 0.px 0px 0px;
+  background-color: #404040;
+  margin-top: -20px;
+    margin-bottom: 30px;
+
+}
+.contain .div{
+  width:550px;
+  background-color: #404040;
+/* margin:1000px; */
+  height: 70px;
+  float: left;
+  margin: 0 0px 0px 0px;
+
+}

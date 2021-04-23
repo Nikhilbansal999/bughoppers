@@ -1,0 +1,105 @@
+<!-- 
+    
+<body><div id="log-in">
+  <form class="login-form" [formGroup]='codeverify' *ngIf="newPost" (ngSubmit)="onCode(code)">
+    <span>OTP </span>
+        
+    <div class="field-container -username">
+      <input class="fname" formControlName="code" type="text" name="name" placeholder="Type Your OTP">
+    </div>
+    <button type="submit" href="/">Submit</button>
+  </form>
+  <form class="login-form" [formGroup]='form' *ngIf="!newPost" (ngSubmit)="onSubmit(name,email,mobile,password,password1,skills)">
+    <h1 class="login-heading">Sign Up</h1>
+    <p class="login-copy">Welcome Folk, for learning Quality Content Free</p>
+    <span>Username </span>
+    <div class="field-container -username">
+        <input formControlName="name" type="email" placeholder="Type Your Username" name="demo" />
+    </div>
+    <br>
+    <span>E-mail </span>
+    <div class="field-container -username">
+        <input formControlName="email" type="email" placeholder="Type Your E-mail" name="demo" />
+    </div>
+    <br>
+    <span>Phone Number </span>
+    <div class="field-container -username">
+        <input type="email"  style="font-size: small;" formControlName="mobile" placeholder="Type Your Number With Your Country code like +91 etc." name="demo" />
+    </div>
+    <br>
+    <span>Skills </span>
+    <div class="field-container -username">
+        <input formControlName="skills" type="email" placeholder="Type Your Skills" name="demo" />
+    </div>
+    <br>
+    <span>Password </span>
+
+    <div class="field-container -password">
+      <input formControlName="password" placeholder="Type Your password" type="password" name="demo"/>
+    </div>
+    <br><span>Confirm Password </span>
+
+    <div class="field-container -password">
+      <input formControlName="password1" placeholder="Re-type Your password" type="password" name="demo"/>
+    </div>
+    <br>
+  
+    <br>
+    <button class="log-in-button"  type="submit">Get OTP</button>
+    <br>
+    <br>
+    <br>
+    
+  </form>
+</div>
+</body> -->
+
+
+    
+<body><div id="log-in">
+ 
+  <form class="login-form" [formGroup]='form'  (ngSubmit)="onSubmit(name,email,mobile,password,password1,skills)">
+    <h1 class="login-heading">Sign Up</h1>
+    <p class="login-copy">Welcome Folk, for learning Quality Content Free</p>
+    <span>Username </span>
+    <div class="field-container -username">
+        <input formControlName="name" type="email" placeholder="Type Your Username" name="demo" />
+    </div>
+    <br>
+    <span>E-mail </span>
+    <div class="field-container -username">
+        <input formControlName="email" type="email" placeholder="Type Your E-mail" name="demo" />
+    </div>
+    <br>
+    <span>Phone Number </span>
+    <div class="field-container -username">
+        <input type="email"  style="font-size: small;" formControlName="mobile" placeholder="Type Your Number With Your Country code like +91 etc." name="demo" />
+    </div>
+    <br>
+    <span>Skills </span>
+    <div class="field-container -username">
+        <input formControlName="skills" type="email" placeholder="Type Your Skills" name="demo" />
+    </div>
+    <br>
+    <span>Password </span>
+
+    <div class="field-container -password">
+      <input formControlName="password" placeholder="Type Your password" type="password" name="demo"/>
+    </div>
+    <br><span>Confirm Password </span>
+
+    <div class="field-container -password">
+      <input formControlName="password1" placeholder="Re-type Your password" type="password" name="demo"/>
+    </div>
+    <br>
+  
+    <br>
+    <button class="log-in-button"  type="submit">Get OTP</button>
+    <br>
+    <br>
+    <br>
+    
+  </form>
+</div>
+</body>
+
